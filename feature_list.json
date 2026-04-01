@@ -1,0 +1,69 @@
+{
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Core Status Dashboard (MVP)",
+      "status": "complete",
+      "features": [
+        { "id": "F01", "name": "Service grid with status indicators", "status": "complete" },
+        { "id": "F02", "name": "Last checked timestamp per service", "status": "complete" },
+        { "id": "F03", "name": "Is X Down search bar", "status": "complete" },
+        { "id": "F04", "name": "Service cards with name, status, description", "status": "complete" },
+        { "id": "F05", "name": "Overall status summary", "status": "complete" },
+        { "id": "F11", "name": "Responsive mobile-first layout", "status": "complete" },
+        { "id": "F12", "name": "Loading skeletons", "status": "complete" },
+        { "id": "S07", "name": "Semantic HTML throughout", "status": "complete" }
+      ]
+    },
+    {
+      "id": "M2",
+      "name": "Incidents & Auto-Refresh",
+      "status": "complete",
+      "features": [
+        { "id": "F06", "name": "Auto-refresh every 5 minutes", "status": "complete" },
+        { "id": "F07", "name": "Incident history feed", "status": "complete" },
+        { "id": "F08", "name": "Uptime percentage badges", "status": "complete" },
+        { "id": "F09", "name": "Service detail expansion", "status": "complete" },
+        { "id": "F14", "name": "Status count summary", "status": "complete" }
+      ]
+    },
+    {
+      "id": "M3",
+      "name": "SEO, Ads & Analytics",
+      "status": "complete",
+      "features": [
+        { "id": "S01", "name": "Meta tags", "status": "complete" },
+        { "id": "S02", "name": "Open Graph tags", "status": "complete" },
+        { "id": "S03", "name": "Twitter Card tags", "status": "complete" },
+        { "id": "S04", "name": "JSON-LD structured data", "status": "complete" },
+        { "id": "S05", "name": "sitemap.xml", "status": "complete" },
+        { "id": "S06", "name": "robots.txt", "status": "complete" },
+        { "id": "S08", "name": "Canonical URL", "status": "complete" },
+        { "id": "S09", "name": "Dynamic meta description", "status": "complete" },
+        { "id": "A01", "name": "Adsterra ad placeholders", "status": "complete" },
+        { "id": "A02", "name": "Adsterra ad key injection", "status": "complete" },
+        { "id": "A04", "name": "Visitor counter", "status": "complete" },
+        { "id": "A05", "name": "Google Sheets webhook", "status": "complete" },
+        { "id": "F10", "name": "Category filters", "status": "complete" },
+        { "id": "F13", "name": "Outage notification banner", "status": "complete" }
+      ]
+    },
+    {
+      "id": "M4",
+      "name": "i18n, Pages & Polish",
+      "status": "complete",
+      "features": [
+        { "id": "I01", "name": "Auto i18n browser detection", "status": "complete" },
+        { "id": "I02", "name": "8+ languages", "status": "complete" },
+        { "id": "I03", "name": "Language selector", "status": "complete" },
+        { "id": "I04", "name": "Social sharing buttons", "status": "complete" },
+        { "id": "I05", "name": "Feedback email link", "status": "complete" },
+        { "id": "P01", "name": "About page", "status": "complete" },
+        { "id": "P02", "name": "FAQ page", "status": "complete" },
+        { "id": "P03", "name": "Privacy Policy page", "status": "complete" },
+        { "id": "P04", "name": "Terms of Service page", "status": "complete" },
+        { "id": "A03", "name": "AdSense fallback", "status": "complete" }
+      ]
+    }
+  ]
+}

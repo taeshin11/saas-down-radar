@@ -1,0 +1,20 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0FDF4"/>
+      <stop offset="100%" style="stop-color:#F8FAFC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="220" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700" fill="#1E293B">SaaS Down Radar</text>
+  <text x="600" y="300" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#64748B">Real-Time SaaS Status &amp; Outage Monitor</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#9CA3AF">Monitor 20+ services: ChatGPT, GitHub, AWS, Slack, and more</text>
+  <circle cx="350" cy="480" r="12" fill="#10B981"/>
+  <text x="375" y="486" font-family="Inter, Arial, sans-serif" font-size="20" fill="#64748B">Operational</text>
+  <circle cx="530" cy="480" r="12" fill="#F59E0B"/>
+  <text x="555" y="486" font-family="Inter, Arial, sans-serif" font-size="20" fill="#64748B">Degraded</text>
+  <circle cx="700" cy="480" r="12" fill="#EF4444"/>
+  <text x="725" y="486" font-family="Inter, Arial, sans-serif" font-size="20" fill="#64748B">Outage</text>
+  <circle cx="840" cy="480" r="12" fill="#9CA3AF"/>
+  <text x="865" y="486" font-family="Inter, Arial, sans-serif" font-size="20" fill="#64748B">Unknown</text>
+</svg>

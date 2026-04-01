@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - SaaS Down Radar</title>
+  <meta name="description" content="Frequently asked questions about SaaS Down Radar - how to use the real-time SaaS status monitor.">
+  <link rel="canonical" href="https://saas-down-radar.vercel.app/faq.html">
+  <meta property="og:title" content="FAQ - SaaS Down Radar">
+  <meta property="og:description" content="Frequently asked questions about SaaS Down Radar.">
+  <meta property="og:url" content="https://saas-down-radar.vercel.app/faq.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does SaaS Down Radar check service status?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We fetch real-time data from public status pages using the Atlassian Statuspage API and other public APIs. Status is checked automatically every 5 minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is SaaS Down Radar free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, SaaS Down Radar is completely free to use. No account or registration required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many services do you monitor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We currently monitor 20+ major SaaS services including ChatGPT, GitHub, AWS, Google Cloud, Azure, Slack, Notion, Vercel, and more."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="min-h-screen bg-[#F2FDF6]">
+  <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="./" class="flex items-center gap-3 text-gray-800 hover:text-gray-600">
+          <span class="text-2xl">📡</span>
+          <span class="font-bold text-lg">SaaS Down Radar</span>
+        </a>
+        <nav class="flex items-center gap-4">
+          <a href="./" class="text-sm text-gray-500 hover:text-gray-800">Home</a>
+          <a href="./about.html" class="text-sm text-gray-500 hover:text-gray-800">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article class="bg-white rounded-2xl border border-gray-100 p-8 sm:p-12">
+      <h1 class="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions</h1>
+
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">How does SaaS Down Radar check service status?</h2>
+          <p class="text-gray-600">We fetch real-time data from public status pages using the Atlassian Statuspage API and other public APIs. Most major SaaS services publish their status through these standardized APIs. Status is checked automatically every 5 minutes and cached locally for fast page loads.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">Is SaaS Down Radar free?</h2>
+          <p class="text-gray-600">Yes, SaaS Down Radar is completely free to use. No account or registration is required. Just open the page and see the current status of all monitored services.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">How many services do you monitor?</h2>
+          <p class="text-gray-600">We currently monitor 20+ major SaaS services across categories including Developer Tools, Cloud Providers, Communication, AI Services, Productivity, Payments, and Monitoring. We plan to add more services over time.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">What do the status colors mean?</h2>
+          <ul class="text-gray-600 space-y-2 ml-4">
+            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-emerald-500"></span> <strong>Green (Operational)</strong> - All systems are working normally</li>
+            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-amber-500"></span> <strong>Yellow (Degraded)</strong> - Service is experiencing performance issues</li>
+            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-orange-500"></span> <strong>Orange (Partial Outage)</strong> - Some components are down</li>
+            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-red-500"></span> <strong>Red (Major Outage)</strong> - Service is significantly impacted or down</li>
+            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-gray-400"></span> <strong>Gray (Unknown)</strong> - Unable to determine status</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">How do I search for a specific service?</h2>
+          <p class="text-gray-600">Use the search bar at the top of the dashboard. You can type the service name (e.g., "ChatGPT", "GitHub", "Slack") or even "Is GitHub down?" and the dashboard will filter to show matching services. You can also press the <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-gray-500 font-mono text-xs">/</kbd> key to quickly focus the search bar.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">What is the uptime percentage?</h2>
+          <p class="text-gray-600">The uptime percentage shown on each service card is an estimated 30-day uptime based on the current status and recent incident history. It provides a general sense of service reliability.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">Can I see individual components for a service?</h2>
+          <p class="text-gray-600">Yes! Click on any service card to expand it and see the status of individual components (e.g., API, Web App, CDN, etc.). You'll also find a link to the official status page for more details.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">Why does a service show "Unknown" status?</h2>
+          <p class="text-gray-600">A service may show "Unknown" if we were unable to reach its status page due to network issues, rate limiting, or if the service's status page API is temporarily unavailable. The status will update on the next refresh cycle.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">Is the data real-time?</h2>
+          <p class="text-gray-600">Status data is refreshed every 5 minutes. The "Last checked" timestamp on each card shows exactly when the data was last updated. You can see the countdown timer in the header for the next refresh.</p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-bold text-gray-800 mb-2">How can I request a new service to be monitored?</h2>
+          <p class="text-gray-600">Email us at <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a> with the service name and its public status page URL. We'll review and add it if it meets our criteria.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="bg-white border-t border-gray-100 mt-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-xs text-gray-400">
+      <div class="flex justify-center gap-4 mb-3">
+        <a href="./privacy.html" class="hover:text-gray-600">Privacy Policy</a>
+        <a href="./terms.html" class="hover:text-gray-600">Terms of Service</a>
+      </div>
+      <p>&copy; 2026 SaaS Down Radar. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

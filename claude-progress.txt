@@ -1,0 +1,51 @@
+SaaS Down Radar - Build Progress
+=================================
+
+Milestone 1: Core Status Dashboard (MVP) - COMPLETE
+  [x] F01 - Service grid with status indicators
+  [x] F02 - Last checked timestamp per service
+  [x] F03 - "Is X Down?" search bar
+  [x] F04 - Service cards with name, status, description
+  [x] F05 - Overall status summary
+  [x] F11 - Responsive mobile-first layout
+  [x] F12 - Loading skeletons
+  [x] S07 - Semantic HTML throughout
+
+Milestone 2: Incidents & Auto-Refresh - COMPLETE
+  [x] F06 - Auto-refresh every 5 minutes
+  [x] F07 - Incident history feed
+  [x] F08 - Uptime percentage badges
+  [x] F09 - Service detail expansion
+  [x] F14 - Status count summary
+
+Milestone 3: SEO, Ads & Analytics - COMPLETE
+  [x] S01 - Meta tags
+  [x] S02 - Open Graph tags
+  [x] S03 - Twitter Card tags
+  [x] S04 - JSON-LD structured data
+  [x] S05 - sitemap.xml
+  [x] S06 - robots.txt
+  [x] S08 - Canonical URL
+  [x] S09 - Dynamic meta description
+  [x] A01 - Adsterra ad placeholders
+  [x] A02 - Adsterra ad key injection
+  [x] A04 - Visitor counter
+  [x] A05 - Google Sheets webhook
+  [x] F10 - Category filters
+  [x] F13 - Outage notification banner
+
+Milestone 4: i18n, Pages & Polish - COMPLETE
+  [x] I01 - Auto i18n browser detection
+  [x] I02 - 8+ languages (EN, KO, JA, ZH, ES, FR, DE, PT)
+  [x] I03 - Language selector
+  [x] I04 - Social sharing buttons
+  [x] I05 - Feedback email link
+  [x] P01 - About page
+  [x] P02 - FAQ page
+  [x] P03 - Privacy Policy page
+  [x] P04 - Terms of Service page
+  [x] A03 - AdSense fallback
+
+Deployment: COMPLETE
+  [x] GitHub repo created
+  [x] Deployed to Vercel

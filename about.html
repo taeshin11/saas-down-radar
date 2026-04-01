@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - SaaS Down Radar</title>
+  <meta name="description" content="Learn about SaaS Down Radar, a free real-time status monitor for 20+ major SaaS services.">
+  <link rel="canonical" href="https://saas-down-radar.vercel.app/about.html">
+  <meta property="og:title" content="About - SaaS Down Radar">
+  <meta property="og:description" content="Learn about SaaS Down Radar, a free real-time status monitor for 20+ major SaaS services.">
+  <meta property="og:url" content="https://saas-down-radar.vercel.app/about.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="min-h-screen bg-[#F2FDF6]">
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="./" class="flex items-center gap-3 text-gray-800 hover:text-gray-600">
+          <span class="text-2xl">📡</span>
+          <span class="font-bold text-lg">SaaS Down Radar</span>
+        </a>
+        <nav class="flex items-center gap-4">
+          <a href="./" class="text-sm text-gray-500 hover:text-gray-800">Home</a>
+          <a href="./faq.html" class="text-sm text-gray-500 hover:text-gray-800">FAQ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article class="bg-white rounded-2xl border border-gray-100 p-8 sm:p-12">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">About SaaS Down Radar</h1>
+
+      <div class="prose prose-gray max-w-none space-y-6">
+        <p class="text-gray-600 text-lg leading-relaxed">
+          SaaS Down Radar is a free, real-time dashboard that monitors the status of 20+ major SaaS services that developers, remote workers, and businesses rely on every day.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">What We Monitor</h2>
+        <p class="text-gray-600">
+          We track services across multiple categories including Developer Tools (GitHub, Vercel, Netlify, npm), Cloud Providers (AWS, Google Cloud, Azure, Cloudflare), Communication (Slack, Discord, Zoom), AI Services (ChatGPT/OpenAI), Productivity (Notion, Figma), Payments (Stripe), and Monitoring (Datadog, Twilio).
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">How It Works</h2>
+        <p class="text-gray-600">
+          SaaS Down Radar fetches real-time status data from public status pages, primarily using the Atlassian Statuspage API. The dashboard displays color-coded status indicators (green for operational, yellow for degraded, orange for partial outage, red for major outage) with last-checked timestamps and estimated uptime percentages.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+          <li>Status checks run automatically every 5 minutes</li>
+          <li>Data is cached locally for fast page loads</li>
+          <li>Click any service card to see individual component status</li>
+          <li>Use the search bar to quickly check if a specific service is down</li>
+          <li>Recent incidents from all monitored services are displayed in a unified feed</li>
+        </ul>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Why We Built This</h2>
+        <p class="text-gray-600">
+          When a service you depend on goes down, the first thing most people do is search "Is X down?" We built SaaS Down Radar to be the fastest, most comprehensive answer to that question. Instead of checking individual status pages, you can see the health of all your critical services at a glance.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Our Principles</h2>
+        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+          <li><strong>Free forever</strong> - No accounts, no subscriptions, no paywalls</li>
+          <li><strong>Privacy-first</strong> - We collect minimal data and never track you personally</li>
+          <li><strong>Transparent</strong> - We show exactly when data was last checked and link to official status pages</li>
+          <li><strong>Fast</strong> - Built with vanilla HTML/CSS/JS for maximum performance</li>
+          <li><strong>Accessible</strong> - Designed for all users with semantic HTML and ARIA labels</li>
+        </ul>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Contact</h2>
+        <p class="text-gray-600">
+          Have feedback, suggestions, or want to report an issue? We'd love to hear from you.
+        </p>
+        <p class="text-gray-600">
+          Email: <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a>
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="bg-white border-t border-gray-100 mt-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-xs text-gray-400">
+      <div class="flex justify-center gap-4 mb-3">
+        <a href="./privacy.html" class="hover:text-gray-600">Privacy Policy</a>
+        <a href="./terms.html" class="hover:text-gray-600">Terms of Service</a>
+      </div>
+      <p>&copy; 2026 SaaS Down Radar. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

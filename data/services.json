@@ -1,0 +1,162 @@
+[
+  {
+    "id": "openai",
+    "name": "ChatGPT / OpenAI",
+    "url": "https://status.openai.com",
+    "api": "https://status.openai.com/api/v2/summary.json",
+    "category": "AI Services",
+    "description": "AI language models and API platform"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "url": "https://www.githubstatus.com",
+    "api": "https://www.githubstatus.com/api/v2/summary.json",
+    "category": "Developer Tools",
+    "description": "Code hosting and collaboration platform"
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "url": "https://health.aws.amazon.com",
+    "api": "https://health.aws.amazon.com/health/status",
+    "category": "Cloud Providers",
+    "description": "Amazon Web Services cloud platform"
+  },
+  {
+    "id": "gcloud",
+    "name": "Google Cloud",
+    "url": "https://status.cloud.google.com",
+    "api": "https://status.cloud.google.com/incidents.json",
+    "category": "Cloud Providers",
+    "description": "Google Cloud Platform services"
+  },
+  {
+    "id": "azure",
+    "name": "Azure",
+    "url": "https://status.azure.com",
+    "api": "https://status.azure.com/en-us/status",
+    "category": "Cloud Providers",
+    "description": "Microsoft Azure cloud platform"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "url": "https://status.slack.com",
+    "api": "https://status.slack.com/api/v2/summary.json",
+    "category": "Communication",
+    "description": "Team messaging and collaboration"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "url": "https://status.notion.so",
+    "api": "https://status.notion.so/api/v2/summary.json",
+    "category": "Productivity",
+    "description": "All-in-one workspace for notes and docs"
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "url": "https://www.vercel-status.com",
+    "api": "https://www.vercel-status.com/api/v2/summary.json",
+    "category": "Developer Tools",
+    "description": "Frontend deployment and hosting platform"
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "url": "https://www.cloudflarestatus.com",
+    "api": "https://www.cloudflarestatus.com/api/v2/summary.json",
+    "category": "Cloud Providers",
+    "description": "CDN, DNS, and security services"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "url": "https://status.stripe.com",
+    "api": "https://status.stripe.com/api/v2/summary.json",
+    "category": "Payments",
+    "description": "Online payment processing platform"
+  },
+  {
+    "id": "twilio",
+    "name": "Twilio",
+    "url": "https://status.twilio.com",
+    "api": "https://status.twilio.com/api/v2/summary.json",
+    "category": "Monitoring",
+    "description": "Cloud communications platform"
+  },
+  {
+    "id": "datadog",
+    "name": "Datadog",
+    "url": "https://status.datadoghq.com",
+    "api": "https://status.datadoghq.com/api/v2/summary.json",
+    "category": "Monitoring",
+    "description": "Cloud monitoring and analytics"
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "url": "https://discordstatus.com",
+    "api": "https://discordstatus.com/api/v2/summary.json",
+    "category": "Communication",
+    "description": "Voice, video, and text communication"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "url": "https://status.zoom.us",
+    "api": "https://status.zoom.us/api/v2/summary.json",
+    "category": "Communication",
+    "description": "Video conferencing platform"
+  },
+  {
+    "id": "netlify",
+    "name": "Netlify",
+    "url": "https://www.netlifystatus.com",
+    "api": "https://www.netlifystatus.com/api/v2/summary.json",
+    "category": "Developer Tools",
+    "description": "Web hosting and automation platform"
+  },
+  {
+    "id": "heroku",
+    "name": "Heroku",
+    "url": "https://status.heroku.com",
+    "api": "https://status.heroku.com/api/v2/summary.json",
+    "category": "Developer Tools",
+    "description": "Cloud application platform"
+  },
+  {
+    "id": "npm",
+    "name": "npm",
+    "url": "https://status.npmjs.org",
+    "api": "https://status.npmjs.org/api/v2/summary.json",
+    "category": "Developer Tools",
+    "description": "Node.js package manager and registry"
+  },
+  {
+    "id": "docker",
+    "name": "Docker Hub",
+    "url": "https://www.dockerstatus.com",
+    "api": "https://www.dockerstatus.com/api/v2/summary.json",
+    "category": "Developer Tools",
+    "description": "Container image registry"
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "url": "https://status.linear.app",
+    "api": "https://status.linear.app/api/v2/summary.json",
+    "category": "Developer Tools",
+    "description": "Project management for software teams"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "url": "https://status.figma.com",
+    "api": "https://status.figma.com/api/v2/summary.json",
+    "category": "Productivity",
+    "description": "Collaborative design tool"
+  }
+]
