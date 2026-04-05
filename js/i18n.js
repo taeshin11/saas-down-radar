@@ -24,6 +24,16 @@ const I18n = {
   },
 
   detectLanguage() {
+    // Check ?lang=xx URL param first (highest priority)
+    try {
+      const urlParam = new URLSearchParams(window.location.search).get('lang');
+      if (urlParam && this.supportedLangs.includes(urlParam)) {
+        this.currentLang = urlParam;
+        localStorage.setItem('sdr_lang', urlParam);
+        return urlParam;
+      }
+    } catch (e) {}
+
     // Check saved preference
     const saved = localStorage.getItem('sdr_lang');
     if (saved && this.supportedLangs.includes(saved)) {

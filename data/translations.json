@@ -50,7 +50,11 @@
     "language": "Language",
     "outageAlert": "is currently experiencing a major outage!",
     "searchNoResults": "No services match your search",
-    "of": "of"
+    "of": "of",
+    "feedbackWidgetTitle": "Send Feedback",
+    "feedbackWidgetPlaceholder": "Your message...",
+    "feedbackWidgetSubmit": "Send",
+    "feedbackWidgetClose": "Close"
   },
   "ko": {
     "title": "SaaS Down Radar",
@@ -103,7 +107,11 @@
     "language": "언어",
     "outageAlert": "현재 주요 장애가 발생했습니다!",
     "searchNoResults": "검색 결과가 없습니다",
-    "of": "/"
+    "of": "/",
+    "feedbackWidgetTitle": "피드백 보내기",
+    "feedbackWidgetPlaceholder": "메시지를 입력하세요...",
+    "feedbackWidgetSubmit": "보내기",
+    "feedbackWidgetClose": "닫기"
   },
   "ja": {
     "title": "SaaS Down Radar",
@@ -156,7 +164,11 @@
     "language": "言語",
     "outageAlert": "は現在重大な障害が発生しています！",
     "searchNoResults": "該当するサービスが見つかりません",
-    "of": "/"
+    "of": "/",
+    "feedbackWidgetTitle": "フィードバックを送る",
+    "feedbackWidgetPlaceholder": "メッセージを入力...",
+    "feedbackWidgetSubmit": "送信",
+    "feedbackWidgetClose": "閉じる"
   },
   "zh": {
     "title": "SaaS Down Radar",
@@ -209,7 +221,11 @@
     "language": "语言",
     "outageAlert": "目前正在经历重大故障！",
     "searchNoResults": "没有匹配的服务",
-    "of": "/"
+    "of": "/",
+    "feedbackWidgetTitle": "发送反馈",
+    "feedbackWidgetPlaceholder": "请输入您的消息...",
+    "feedbackWidgetSubmit": "发送",
+    "feedbackWidgetClose": "关闭"
   },
   "es": {
     "title": "SaaS Down Radar",
@@ -262,7 +278,11 @@
     "language": "Idioma",
     "outageAlert": "esta experimentando una caida mayor!",
     "searchNoResults": "No hay servicios que coincidan",
-    "of": "de"
+    "of": "de",
+    "feedbackWidgetTitle": "Enviar comentarios",
+    "feedbackWidgetPlaceholder": "Tu mensaje...",
+    "feedbackWidgetSubmit": "Enviar",
+    "feedbackWidgetClose": "Cerrar"
   },
   "fr": {
     "title": "SaaS Down Radar",
@@ -315,7 +335,11 @@
     "language": "Langue",
     "outageAlert": "subit actuellement une panne majeure!",
     "searchNoResults": "Aucun service correspondant",
-    "of": "sur"
+    "of": "sur",
+    "feedbackWidgetTitle": "Envoyer des commentaires",
+    "feedbackWidgetPlaceholder": "Votre message...",
+    "feedbackWidgetSubmit": "Envoyer",
+    "feedbackWidgetClose": "Fermer"
   },
   "de": {
     "title": "SaaS Down Radar",
@@ -368,7 +392,11 @@
     "language": "Sprache",
     "outageAlert": "hat derzeit einen grosser Ausfall!",
     "searchNoResults": "Keine passenden Dienste gefunden",
-    "of": "von"
+    "of": "von",
+    "feedbackWidgetTitle": "Feedback senden",
+    "feedbackWidgetPlaceholder": "Ihre Nachricht...",
+    "feedbackWidgetSubmit": "Senden",
+    "feedbackWidgetClose": "Schließen"
   },
   "pt": {
     "title": "SaaS Down Radar",
@@ -421,6 +449,10 @@
     "language": "Idioma",
     "outageAlert": "esta atualmente com uma queda maior!",
     "searchNoResults": "Nenhum servico encontrado",
-    "of": "de"
+    "of": "de",
+    "feedbackWidgetTitle": "Enviar feedback",
+    "feedbackWidgetPlaceholder": "Sua mensagem...",
+    "feedbackWidgetSubmit": "Enviar",
+    "feedbackWidgetClose": "Fechar"
   }
 }
