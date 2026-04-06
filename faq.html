@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - SaaS Down Radar</title>
-  <meta name="description" content="Frequently asked questions about SaaS Down Radar - how to use the real-time SaaS status monitor.">
+  <title>FAQ - SaaS Down Radar | Common Questions About Service Status Monitoring</title>
+  <meta name="description" content="Frequently asked questions about SaaS Down Radar: how status data is fetched, what degraded performance means, which services are monitored, how to request new services, and more.">
+  <meta name="keywords" content="SaaS status monitor FAQ, service outage questions, is a service down, SaaS downtime help, status page API explained">
   <link rel="canonical" href="https://saas-down-radar.vercel.app/faq.html">
   <meta property="og:title" content="FAQ - SaaS Down Radar">
-  <meta property="og:description" content="Frequently asked questions about SaaS Down Radar.">
+  <meta property="og:description" content="Frequently asked questions about SaaS Down Radar — how status monitoring works, what each status means, and how to use the dashboard effectively.">
   <meta property="og:url" content="https://saas-down-radar.vercel.app/faq.html">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
@@ -23,26 +24,66 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How does SaaS Down Radar check service status?",
+        "name": "How does SaaS Down Radar fetch status data?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We fetch real-time data from public status pages using the Atlassian Statuspage API and other public APIs. Status is checked automatically every 5 minutes."
+          "text": "SaaS Down Radar fetches real-time status data directly from each service's official public status page. Most major SaaS providers publish their operational status through standardized APIs, particularly the Atlassian Statuspage platform. We query these APIs every five minutes to retrieve current component-level status for each service. Because we read directly from official sources, the status information reflects exactly what the vendor is reporting — no third-party estimation or crowd-sourcing involved."
         }
       },
       {
         "@type": "Question",
-        "name": "Is SaaS Down Radar free?",
+        "name": "How often is status data updated?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, SaaS Down Radar is completely free to use. No account or registration required."
+          "text": "Status data is refreshed automatically every five minutes. A countdown timer in the top navigation bar shows exactly how long until the next refresh. Each service card also displays a last-checked timestamp so you always know how fresh the data is. You can identify when a refresh is in progress via the Refreshing indicator in the header."
         }
       },
       {
         "@type": "Question",
-        "name": "How many services do you monitor?",
+        "name": "What is the difference between degraded performance and a full outage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We currently monitor 20+ major SaaS services including ChatGPT, GitHub, AWS, Google Cloud, Azure, Slack, Notion, Vercel, and more."
+          "text": "Degraded performance means the service is running but experiencing problems — slow response times, intermittent errors, or reduced functionality in specific features. A partial or major outage means one or more significant components are fully unavailable or the service is down for a large portion of users. Understanding this distinction helps teams decide whether to wait out a minor performance blip or immediately invoke fallback procedures."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which services does SaaS Down Radar monitor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We monitor 20+ major SaaS services across six categories: Developer Tools (GitHub, Vercel, Netlify, npm), Cloud Infrastructure (AWS, Google Cloud, Azure, Cloudflare), Communication (Slack, Discord, Zoom), AI Services (OpenAI/ChatGPT), Productivity and Design (Notion, Figma, Linear), and Payments and Monitoring (Stripe, Datadog, Twilio). We regularly add new services based on user requests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I get notified of outages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most reliable way is to bookmark SaaS Down Radar and check it whenever you suspect an issue. The dashboard auto-refreshes every five minutes, and an outage banner appears at the top of the page when any monitored service enters a degraded or outage state. For active monitoring, keep the dashboard open in a browser tab during working hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I request adding a new service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Send an email to taeshinkim11@gmail.com with the service name and a link to its public status page. We review all requests and prioritize services that have a high number of users and a publicly available status API. Most major SaaS providers that use Atlassian Statuspage can be added relatively quickly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the incident history section show?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The incident history feed aggregates recent incidents across all monitored services into a unified timeline. Each entry shows the service name, incident title, severity, start time, and a link to the official incident report. This view helps teams correlate past incidents with current behavior, conduct post-incident reviews, and assess the historical reliability of services they are evaluating."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is SaaS Down Radar compatible with mobile devices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, SaaS Down Radar is fully responsive and designed to work well on smartphones and tablets. The service grid adapts from a four-column desktop layout to single or two-column layouts on smaller screens. All features, including search, category filters, and status details, are accessible on mobile."
         }
       }
     ]
@@ -60,6 +101,8 @@
         <nav class="flex items-center gap-4">
           <a href="./" class="text-sm text-gray-500 hover:text-gray-800">Home</a>
           <a href="./about.html" class="text-sm text-gray-500 hover:text-gray-800">About</a>
+          <a href="./privacy.html" class="text-sm text-gray-500 hover:text-gray-800">Privacy</a>
+          <a href="./terms.html" class="text-sm text-gray-500 hover:text-gray-800">Terms</a>
         </nav>
       </div>
     </div>
@@ -69,62 +112,53 @@
     <article class="bg-white rounded-2xl border border-gray-100 p-8 sm:p-12">
       <h1 class="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions</h1>
 
-      <div class="space-y-8">
+      <div class="space-y-10">
+
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">How does SaaS Down Radar check service status?</h2>
-          <p class="text-gray-600">We fetch real-time data from public status pages using the Atlassian Statuspage API and other public APIs. Most major SaaS services publish their status through these standardized APIs. Status is checked automatically every 5 minutes and cached locally for fast page loads.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">How does SaaS Down Radar fetch status data?</h2>
+          <p class="text-gray-600 leading-relaxed">SaaS Down Radar fetches real-time status data directly from each service's official public status page. Most major SaaS providers publish their operational status through standardized APIs, particularly the Atlassian Statuspage platform — the system used by GitHub, Slack, Stripe, Cloudflare, and dozens of others. We query these APIs every five minutes to retrieve current component-level status for each monitored service. Because we read directly from official sources, the status information you see reflects exactly what the vendor is reporting — no third-party estimation, no crowd-sourcing, and no guesswork. For services that do not use the Atlassian platform, we integrate with their native public APIs wherever available.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">Is SaaS Down Radar free?</h2>
-          <p class="text-gray-600">Yes, SaaS Down Radar is completely free to use. No account or registration is required. Just open the page and see the current status of all monitored services.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">How often is status data updated?</h2>
+          <p class="text-gray-600 leading-relaxed">Status data is refreshed automatically every five minutes. You can see exactly how long until the next refresh by checking the countdown timer in the top navigation bar — it counts down from 5:00 and resets after each refresh cycle. Each individual service card also displays a "last checked" timestamp so you always know precisely how recent the data is. When a refresh is actively in progress, a "Refreshing..." indicator appears in the header. This five-minute interval balances the need for timely information against the rate limits imposed by various status page APIs. During active incidents, major services typically update their status pages every few minutes anyway, so the five-minute polling interval ensures you receive updates very close to when they are published.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">How many services do you monitor?</h2>
-          <p class="text-gray-600">We currently monitor 20+ major SaaS services across categories including Developer Tools, Cloud Providers, Communication, AI Services, Productivity, Payments, and Monitoring. We plan to add more services over time.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">What is the difference between "Degraded Performance" and a full outage?</h2>
+          <p class="text-gray-600 leading-relaxed">This is one of the most important distinctions on the dashboard. Degraded performance (shown in yellow) means the service is still running and accessible, but it is experiencing problems that affect quality — slow response times, intermittent API errors, delayed notifications, or reduced functionality in specific features. For example, Slack might deliver messages with a multi-minute delay, or GitHub might show intermittent 500 errors on pull request pages. A partial outage (orange) is more severe: one or more significant components of the service are fully unavailable for some or all users. A major outage (red) means the service itself is broadly down or inaccessible. Understanding these distinctions helps teams make smarter decisions — during degraded performance you might continue working with patience, while a major outage warrants immediately invoking backup communication channels or pausing deployments that depend on the affected service.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">What do the status colors mean?</h2>
-          <ul class="text-gray-600 space-y-2 ml-4">
-            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-emerald-500"></span> <strong>Green (Operational)</strong> - All systems are working normally</li>
-            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-amber-500"></span> <strong>Yellow (Degraded)</strong> - Service is experiencing performance issues</li>
-            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-orange-500"></span> <strong>Orange (Partial Outage)</strong> - Some components are down</li>
-            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-red-500"></span> <strong>Red (Major Outage)</strong> - Service is significantly impacted or down</li>
-            <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-gray-400"></span> <strong>Gray (Unknown)</strong> - Unable to determine status</li>
-          </ul>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">Which services does SaaS Down Radar monitor?</h2>
+          <p class="text-gray-600 leading-relaxed">We currently monitor more than 20 major SaaS platforms across six categories. Developer Tools include GitHub (code hosting and CI/CD), Vercel (frontend deployment), Netlify (static hosting and functions), and npm (package registry). Cloud Infrastructure covers AWS (Amazon Web Services), Google Cloud Platform, Microsoft Azure, and Cloudflare (CDN and security). Communication platforms include Slack, Discord, and Zoom. AI Services currently covers OpenAI, the provider behind ChatGPT and the widely used GPT-4 API. Productivity and Design includes Notion, Figma, and Linear. Payments and Monitoring covers Stripe (payment processing), Datadog (infrastructure monitoring), and Twilio (messaging and communications APIs). We regularly evaluate and add new services based on community requests, prioritizing tools with broad adoption and publicly available status APIs.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">How do I search for a specific service?</h2>
-          <p class="text-gray-600">Use the search bar at the top of the dashboard. You can type the service name (e.g., "ChatGPT", "GitHub", "Slack") or even "Is GitHub down?" and the dashboard will filter to show matching services. You can also press the <kbd class="px-1.5 py-0.5 bg-gray-100 rounded text-gray-500 font-mono text-xs">/</kbd> key to quickly focus the search bar.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">How can I get notified of outages?</h2>
+          <p class="text-gray-600 leading-relaxed">The most straightforward approach is to bookmark SaaS Down Radar and keep it open in a browser tab during your working hours. The dashboard auto-refreshes every five minutes without any user interaction, and when any monitored service enters a degraded or outage state, a prominent outage notification banner appears at the top of the page with details about which services are affected. This banner is implemented with ARIA live region support, making it accessible to screen reader users as well. For teams that want a more proactive monitoring setup, we recommend integrating SaaS Down Radar into your incident response runbook — when your alerting system fires, the first manual check should be whether the affected service is already reporting an incident. This can dramatically reduce the time engineers spend investigating issues that are actually caused by vendor outages rather than internal code problems.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">What is the uptime percentage?</h2>
-          <p class="text-gray-600">The uptime percentage shown on each service card is an estimated 30-day uptime based on the current status and recent incident history. It provides a general sense of service reliability.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">How do I request adding a new service?</h2>
+          <p class="text-gray-600 leading-relaxed">Send an email to <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a> with the service name and a link to its public status page. We review all requests and prioritize services that meet two criteria: significant user adoption in professional or developer contexts, and a publicly accessible status API. Most major SaaS providers that use the Atlassian Statuspage platform can be added quickly since we already have integration infrastructure for that format. For services that use custom status page implementations, integration takes a bit more development effort. We aim to respond to all service requests within one week and will let you know whether and when the service is added. There is no charge for requesting a service — SaaS Down Radar will always remain free, and we expand our coverage based on what the community needs most.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">Can I see individual components for a service?</h2>
-          <p class="text-gray-600">Yes! Click on any service card to expand it and see the status of individual components (e.g., API, Web App, CDN, etc.). You'll also find a link to the official status page for more details.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">What does the incident history section show?</h2>
+          <p class="text-gray-600 leading-relaxed">The incident history feed, located below the main service grid on the dashboard, aggregates recent incidents across all monitored services into a unified chronological timeline. Each incident entry shows the name of the affected service, a title or brief description of the incident, the severity level (minor, major, or critical), the start time of the incident, the current resolution status (investigating, identified, monitoring, or resolved), and a direct link to the official incident report on the service's own status page. This unified view is particularly valuable for teams conducting post-incident reviews, as it lets you quickly reconstruct what was happening across your entire SaaS stack at any given time. It also helps infrastructure teams assess the historical reliability of services they are evaluating for adoption, giving a factual baseline beyond what vendors publish in their SLA marketing materials.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">Why does a service show "Unknown" status?</h2>
-          <p class="text-gray-600">A service may show "Unknown" if we were unable to reach its status page due to network issues, rate limiting, or if the service's status page API is temporarily unavailable. The status will update on the next refresh cycle.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">Is SaaS Down Radar compatible with mobile devices?</h2>
+          <p class="text-gray-600 leading-relaxed">Yes, SaaS Down Radar is fully responsive and designed to work well on smartphones, tablets, and desktop displays of all sizes. The service status grid adapts from a four-column layout on large desktop screens to two columns on tablets and a single column on phones, ensuring all service cards remain readable and tappable at any screen size. The search bar, category filter buttons, incident history feed, and all other dashboard features function identically on mobile. The navigation collapses gracefully on smaller screens, and share buttons for social networks are accessible in the footer on mobile. Performance is optimized for mobile networks as well — the entire dashboard loads from a minimal static bundle with no heavy frameworks, keeping load times fast even on slower connections.</p>
         </div>
 
         <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">Is the data real-time?</h2>
-          <p class="text-gray-600">Status data is refreshed every 5 minutes. The "Last checked" timestamp on each card shows exactly when the data was last updated. You can see the countdown timer in the header for the next refresh.</p>
+          <h2 class="text-lg font-bold text-gray-800 mb-3">Why does a service sometimes show "Unknown" status?</h2>
+          <p class="text-gray-600 leading-relaxed">A service may show "Unknown" status (displayed in gray) when SaaS Down Radar was unable to retrieve a valid response from that service's status API during the most recent check. This can happen for several reasons: temporary network issues between our system and the status page API, rate limiting by the status page provider, or a temporary unavailability of the status page itself. Importantly, an Unknown status does not necessarily mean the service is down — it means we simply could not confirm its status during the last polling interval. The status will automatically update on the next refresh cycle (within five minutes). If a service consistently shows Unknown, please let us know at <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a> and we will investigate the API integration.</p>
         </div>
 
-        <div>
-          <h2 class="text-lg font-bold text-gray-800 mb-2">How can I request a new service to be monitored?</h2>
-          <p class="text-gray-600">Email us at <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a> with the service name and its public status page URL. We'll review and add it if it meets our criteria.</p>
-        </div>
       </div>
     </article>
   </main>
@@ -132,6 +166,9 @@
   <footer class="bg-white border-t border-gray-100 mt-12">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-xs text-gray-400">
       <div class="flex justify-center gap-4 mb-3">
+        <a href="./" class="hover:text-gray-600">Home</a>
+        <a href="./about.html" class="hover:text-gray-600">About</a>
+        <a href="./faq.html" class="hover:text-gray-600">FAQ</a>
         <a href="./privacy.html" class="hover:text-gray-600">Privacy Policy</a>
         <a href="./terms.html" class="hover:text-gray-600">Terms of Service</a>
       </div>

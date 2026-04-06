@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - SaaS Down Radar</title>
-  <meta name="description" content="Learn about SaaS Down Radar, a free real-time status monitor for 20+ major SaaS services.">
+  <title>About SaaS Down Radar - Real-Time SaaS Status & Outage Monitor</title>
+  <meta name="description" content="SaaS Down Radar monitors the real-time operational status of 20+ major SaaS platforms including GitHub, Slack, Notion, AWS, and more. Learn how it works and who it helps.">
+  <meta name="keywords" content="SaaS status monitor, service outage tracker, is GitHub down, is Slack down, DevOps uptime tool, SaaS downtime monitoring">
   <link rel="canonical" href="https://saas-down-radar.vercel.app/about.html">
-  <meta property="og:title" content="About - SaaS Down Radar">
-  <meta property="og:description" content="Learn about SaaS Down Radar, a free real-time status monitor for 20+ major SaaS services.">
+  <meta property="og:title" content="About SaaS Down Radar - Real-Time SaaS Status Monitor">
+  <meta property="og:description" content="Learn how SaaS Down Radar monitors the real-time operational status of 20+ major SaaS platforms and helps businesses respond to outages faster.">
   <meta property="og:url" content="https://saas-down-radar.vercel.app/about.html">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
@@ -27,6 +28,8 @@
         <nav class="flex items-center gap-4">
           <a href="./" class="text-sm text-gray-500 hover:text-gray-800">Home</a>
           <a href="./faq.html" class="text-sm text-gray-500 hover:text-gray-800">FAQ</a>
+          <a href="./privacy.html" class="text-sm text-gray-500 hover:text-gray-800">Privacy</a>
+          <a href="./terms.html" class="text-sm text-gray-500 hover:text-gray-800">Terms</a>
         </nav>
       </div>
     </div>
@@ -37,44 +40,98 @@
       <h1 class="text-3xl font-bold text-gray-800 mb-6">About SaaS Down Radar</h1>
 
       <div class="prose prose-gray max-w-none space-y-6">
+
         <p class="text-gray-600 text-lg leading-relaxed">
-          SaaS Down Radar is a free, real-time dashboard that monitors the status of 20+ major SaaS services that developers, remote workers, and businesses rely on every day.
+          SaaS Down Radar is a free, real-time service status dashboard that gives developers, IT professionals, and business teams instant visibility into the operational health of the cloud tools they depend on every day. In a world where organizations run on software-as-a-service platforms, unplanned downtime is not just an inconvenience — it directly affects productivity, revenue, and customer trust. SaaS Down Radar was built to help you know the moment something goes wrong, so you can act immediately rather than spending precious time diagnosing whether the problem is yours or the vendor's.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">The Cost of SaaS Downtime</h2>
+        <p class="text-gray-600">
+          Modern businesses rely on dozens of SaaS applications to operate: communication platforms like Slack for team messaging, project management tools like Notion and Linear for tracking work, developer infrastructure like GitHub and Vercel for shipping code, cloud providers like AWS and Google Cloud for running applications, and payment processors like Stripe for generating revenue. When any one of these services experiences degraded performance or a full outage, work grinds to a halt.
+        </p>
+        <p class="text-gray-600">
+          Industry research consistently shows that SaaS outages cost organizations thousands of dollars per hour in lost productivity and missed business opportunities. For a 50-person development team, even a 30-minute GitHub outage during a critical deployment window can cascade into hours of delayed releases, customer-facing issues, and engineer frustration. For businesses that accept payments through Stripe or process data through AWS, the stakes are even higher. SaaS Down Radar exists to put the right information in front of the right people as fast as possible.
         </p>
 
         <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">What We Monitor</h2>
         <p class="text-gray-600">
-          We track services across multiple categories including Developer Tools (GitHub, Vercel, Netlify, npm), Cloud Providers (AWS, Google Cloud, Azure, Cloudflare), Communication (Slack, Discord, Zoom), AI Services (ChatGPT/OpenAI), Productivity (Notion, Figma), Payments (Stripe), and Monitoring (Datadog, Twilio).
-        </p>
-
-        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">How It Works</h2>
-        <p class="text-gray-600">
-          SaaS Down Radar fetches real-time status data from public status pages, primarily using the Atlassian Statuspage API. The dashboard displays color-coded status indicators (green for operational, yellow for degraded, orange for partial outage, red for major outage) with last-checked timestamps and estimated uptime percentages.
+          SaaS Down Radar tracks the real-time operational status of more than 20 major SaaS platforms across six key categories:
         </p>
         <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-          <li>Status checks run automatically every 5 minutes</li>
-          <li>Data is cached locally for fast page loads</li>
-          <li>Click any service card to see individual component status</li>
-          <li>Use the search bar to quickly check if a specific service is down</li>
-          <li>Recent incidents from all monitored services are displayed in a unified feed</li>
+          <li><strong>Developer Tools:</strong> GitHub, Vercel, Netlify, npm — the backbone of modern software development pipelines</li>
+          <li><strong>Cloud Infrastructure:</strong> AWS, Google Cloud Platform, Microsoft Azure, Cloudflare — foundational services that power the web</li>
+          <li><strong>Communication &amp; Collaboration:</strong> Slack, Discord, Zoom — platforms teams depend on for real-time coordination</li>
+          <li><strong>AI Services:</strong> OpenAI (ChatGPT) — increasingly critical for businesses integrating AI capabilities</li>
+          <li><strong>Productivity &amp; Design:</strong> Notion, Figma, Linear — tools for project management, documentation, and design work</li>
+          <li><strong>Payments &amp; Monitoring:</strong> Stripe, Datadog, Twilio — services where outages have direct revenue and operational impact</li>
         </ul>
-
-        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Why We Built This</h2>
         <p class="text-gray-600">
-          When a service you depend on goes down, the first thing most people do is search "Is X down?" We built SaaS Down Radar to be the fastest, most comprehensive answer to that question. Instead of checking individual status pages, you can see the health of all your critical services at a glance.
+          We continue to expand our monitored service list based on community feedback. If a service you rely on is not yet covered, you can request it through our contact form.
         </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">How Status Data Is Fetched</h2>
+        <p class="text-gray-600">
+          SaaS Down Radar fetches status data directly from each service's official public status page. Most major SaaS providers publish their operational status through standardized APIs, particularly the Atlassian Statuspage platform (used by GitHub, Slack, Stripe, Cloudflare, and many others). We query these APIs every five minutes to retrieve the current component-level status for each service.
+        </p>
+        <p class="text-gray-600">
+          When status data is fetched, it is processed and displayed as color-coded indicators on the dashboard:
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+          <li><strong>Green — Operational:</strong> All service components are functioning normally with no known issues</li>
+          <li><strong>Yellow — Degraded Performance:</strong> The service is partially impaired; some functions may be slow, unreliable, or intermittently failing</li>
+          <li><strong>Orange — Partial Outage:</strong> One or more significant components are unavailable, but the service as a whole is still partially functional</li>
+          <li><strong>Red — Major Outage:</strong> The service is experiencing a serious, widespread failure affecting most or all users</li>
+          <li><strong>Gray — Unknown:</strong> We were unable to retrieve status data during the last check; this may indicate a network issue on our end</li>
+        </ul>
+        <p class="text-gray-600">
+          Each service card displays the exact timestamp of the last status check, giving you full transparency into how fresh the data is. You can also click any service card to expand it and view component-level status — for example, seeing whether GitHub's API, Git operations, or Actions are individually affected.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Understanding Degraded Performance vs. Full Outage</h2>
+        <p class="text-gray-600">
+          One of the most important distinctions SaaS Down Radar helps users make is between a degraded performance state and a full outage. A degraded performance status means the service is still running but is experiencing problems — slow response times, intermittent errors, or reduced functionality in specific features. This might manifest as Slack messages taking longer to deliver, GitHub pull requests timing out occasionally, or Stripe webhooks arriving with delays.
+        </p>
+        <p class="text-gray-600">
+          A partial or major outage is more severe: certain components of the service are entirely unavailable, or the service itself is down for a significant portion of users. Understanding this distinction helps teams make better decisions — for example, deciding whether to wait out a degraded performance issue or immediately escalate to a fallback process.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Incident History Tracking</h2>
+        <p class="text-gray-600">
+          Beyond real-time status, SaaS Down Radar displays a unified incident history feed that aggregates recent incidents across all monitored services. This historical view is invaluable for several reasons: it helps teams correlate past incidents with current performance issues, provides a record for post-incident reviews, and allows managers to assess the reliability track record of services they are evaluating for adoption. Each incident entry includes the service name, incident severity, start time, and a link to the official incident report for full details.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Who Uses SaaS Down Radar</h2>
+        <p class="text-gray-600">
+          SaaS Down Radar serves a wide range of users who all share the same core need: knowing immediately when a service they depend on is not working properly.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+          <li><strong>DevOps and Platform Engineers:</strong> Teams responsible for application reliability use SaaS Down Radar to quickly determine whether an incident is caused by a third-party dependency or their own infrastructure, dramatically reducing mean time to resolution (MTTR)</li>
+          <li><strong>IT Managers:</strong> IT leaders use the dashboard to stay ahead of employee-reported issues, proactively communicating service disruptions before they escalate into support tickets</li>
+          <li><strong>Small Businesses:</strong> Companies that run entirely on SaaS tools — from accounting software to CRM platforms — use SaaS Down Radar to understand when external factors are affecting their operations</li>
+          <li><strong>Remote Teams:</strong> Distributed teams rely heavily on communication and collaboration SaaS tools, making real-time status visibility critical for maintaining productivity across time zones</li>
+          <li><strong>Individual Developers:</strong> Freelancers and independent developers use the tool to quickly diagnose whether a problem they are experiencing is widespread or isolated to their environment</li>
+        </ul>
 
         <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Our Principles</h2>
         <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
-          <li><strong>Free forever</strong> - No accounts, no subscriptions, no paywalls</li>
-          <li><strong>Privacy-first</strong> - We collect minimal data and never track you personally</li>
-          <li><strong>Transparent</strong> - We show exactly when data was last checked and link to official status pages</li>
-          <li><strong>Fast</strong> - Built with vanilla HTML/CSS/JS for maximum performance</li>
-          <li><strong>Accessible</strong> - Designed for all users with semantic HTML and ARIA labels</li>
+          <li><strong>Free forever:</strong> No accounts, no subscriptions, no paywalls. Every user gets full access to real-time status data at no cost</li>
+          <li><strong>Privacy-first:</strong> We do not track individual users or store personally identifiable information. Our data collection is minimal and anonymized</li>
+          <li><strong>Transparent:</strong> We show exactly when data was last fetched, link directly to official status pages, and never manipulate or editorialize status information</li>
+          <li><strong>Fast and lightweight:</strong> Built with vanilla HTML, CSS, and JavaScript for maximum performance and minimal data usage on any device or network connection</li>
+          <li><strong>Accessible:</strong> Designed for all users with semantic HTML, proper ARIA labels, and keyboard navigation support</li>
         </ul>
 
-        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Contact</h2>
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">How to Get the Most Out of SaaS Down Radar</h2>
         <p class="text-gray-600">
-          Have feedback, suggestions, or want to report an issue? We'd love to hear from you.
+          Bookmark the SaaS Down Radar homepage and make it part of your incident response workflow. When something feels wrong with a service, open the dashboard before spending time debugging locally — if the service is already showing a degraded or outage status, you can immediately shift your team's effort toward workarounds rather than internal investigation. The search bar lets you quickly find any specific service by name, and the category filters help you focus on the subset of tools most relevant to your work.
+        </p>
+        <p class="text-gray-600">
+          For teams with more formal SRE or DevOps processes, SaaS Down Radar serves as a quick first-check tool that complements your existing monitoring stack. It provides an external, unbiased view of vendor status that your internal monitoring tools cannot replicate.
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-8 mb-3">Contact Us</h2>
+        <p class="text-gray-600">
+          Have feedback, a service suggestion, or want to report an issue with our status data? We would love to hear from you. SaaS Down Radar is built for its users, and your input directly shapes what we monitor and how we display information.
         </p>
         <p class="text-gray-600">
           Email: <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a>
@@ -86,6 +143,9 @@
   <footer class="bg-white border-t border-gray-100 mt-12">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-xs text-gray-400">
       <div class="flex justify-center gap-4 mb-3">
+        <a href="./" class="hover:text-gray-600">Home</a>
+        <a href="./about.html" class="hover:text-gray-600">About</a>
+        <a href="./faq.html" class="hover:text-gray-600">FAQ</a>
         <a href="./privacy.html" class="hover:text-gray-600">Privacy Policy</a>
         <a href="./terms.html" class="hover:text-gray-600">Terms of Service</a>
       </div>

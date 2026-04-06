@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Service - SaaS Down Radar</title>
-  <meta name="description" content="Terms of Service for SaaS Down Radar.">
+  <meta name="description" content="Terms of Service for SaaS Down Radar. Understand the data accuracy disclaimers, limitation of liability, and acceptable use policy for our SaaS status monitoring service.">
   <link rel="canonical" href="https://saas-down-radar.vercel.app/terms.html">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
   <link rel="manifest" href="/manifest.json">
@@ -21,6 +21,8 @@
         </a>
         <nav class="flex items-center gap-4">
           <a href="./" class="text-sm text-gray-500 hover:text-gray-800">Home</a>
+          <a href="./about.html" class="text-sm text-gray-500 hover:text-gray-800">About</a>
+          <a href="./faq.html" class="text-sm text-gray-500 hover:text-gray-800">FAQ</a>
           <a href="./privacy.html" class="text-sm text-gray-500 hover:text-gray-800">Privacy</a>
         </nav>
       </div>
@@ -30,64 +32,94 @@
   <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <article class="bg-white rounded-2xl border border-gray-100 p-8 sm:p-12">
       <h1 class="text-3xl font-bold text-gray-800 mb-2">Terms of Service</h1>
-      <p class="text-gray-400 text-sm mb-8">Last updated: April 1, 2026</p>
+      <p class="text-gray-400 text-sm mb-8">Last updated: April 2, 2026</p>
 
       <div class="prose prose-gray max-w-none space-y-6 text-gray-600">
+
+        <p>Please read these Terms of Service carefully before using SaaS Down Radar. By accessing or using this website at <a href="https://saas-down-radar.vercel.app" class="text-blue-500 hover:text-blue-700">saas-down-radar.vercel.app</a>, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not access or use the Service.</p>
+
         <h2 class="text-xl font-bold text-gray-800">1. Acceptance of Terms</h2>
-        <p>By accessing and using SaaS Down Radar ("the Service"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Service.</p>
+        <p>By accessing and using SaaS Down Radar (referred to herein as "the Service," "we," "us," or "our"), you agree to be bound by these Terms of Service, along with our Privacy Policy, which is incorporated by reference. These Terms apply to all visitors and users of the Service. We reserve the right to update these Terms at any time; we will indicate the date of the most recent revision at the top of this page. Your continued use of the Service following any changes constitutes your acceptance of the revised Terms.</p>
 
         <h2 class="text-xl font-bold text-gray-800">2. Description of Service</h2>
-        <p>SaaS Down Radar is a free web-based dashboard that monitors and displays the real-time status of third-party SaaS services. Status data is fetched from publicly available status pages and APIs.</p>
+        <p>SaaS Down Radar is a free, browser-based dashboard that monitors and displays the publicly reported operational status of third-party software-as-a-service (SaaS) platforms. The Service aggregates status data from official public status pages and APIs maintained by the respective service providers. The dashboard presents this data in a unified, user-friendly interface with color-coded status indicators, service search and filtering, incident history, and estimated uptime information.</p>
+        <p>The Service is provided free of charge and requires no user registration, subscription, or payment of any kind. We may display advertisements on the Service as our primary means of sustaining operations.</p>
 
-        <h2 class="text-xl font-bold text-gray-800">3. No Warranty</h2>
-        <p>The Service is provided "as is" and "as available" without any warranties of any kind, either express or implied. We do not guarantee that:</p>
+        <h2 class="text-xl font-bold text-gray-800">3. Data Accuracy Disclaimer</h2>
+        <p>The status information displayed on SaaS Down Radar is provided on a best-effort basis. Specifically, you should be aware of the following important limitations:</p>
+        <ul class="list-disc list-inside ml-4 space-y-2">
+          <li><strong>Status data is sourced from third parties.</strong> We do not independently verify or test service availability. The status we display reflects what each service's official status page reports — if a vendor delays updating their status page during an incident (which is common), our dashboard will reflect that delay.</li>
+          <li><strong>Polling intervals introduce latency.</strong> Status data is refreshed every five minutes. In rapidly evolving incidents, actual service conditions may differ from what is currently displayed.</li>
+          <li><strong>Status may not reflect all users.</strong> A service may report "Operational" even when a subset of users or geographic regions is experiencing problems. Vendor status pages reflect the vendor's assessment of their own infrastructure, which may not match every user's individual experience.</li>
+          <li><strong>Data is not guaranteed to be complete or error-free.</strong> Temporary API failures, rate limiting, or network issues may cause status data for specific services to be unavailable or stale at any given time.</li>
+          <li><strong>Uptime percentages are estimates.</strong> The uptime percentages shown on service cards are calculated estimates based on available status data and should not be used as contractual uptime metrics.</li>
+        </ul>
+        <p>SaaS Down Radar is intended as a convenient reference tool, not as a definitive or guaranteed source of service availability information. For critical decisions, always consult the service's official status page directly.</p>
+
+        <h2 class="text-xl font-bold text-gray-800">4. No Warranty</h2>
+        <p>The Service is provided "as is" and "as available" without warranties of any kind, either express or implied. To the fullest extent permitted by applicable law, we disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, accuracy, and non-infringement. We do not warrant that:</p>
         <ul class="list-disc list-inside ml-4 space-y-1">
-          <li>The Service will be uninterrupted or error-free</li>
-          <li>Status information will be 100% accurate or up-to-date</li>
-          <li>The Service will meet your specific requirements</li>
+          <li>The Service will be available at all times or free from errors or interruptions</li>
+          <li>The status information displayed will be accurate, complete, or up to date</li>
+          <li>The Service will meet your specific requirements or expectations</li>
+          <li>Any defects in the Service will be corrected</li>
         </ul>
 
-        <h2 class="text-xl font-bold text-gray-800">4. Limitation of Liability</h2>
-        <p>SaaS Down Radar and its operators shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of the Service. This includes but is not limited to damages resulting from:</p>
+        <h2 class="text-xl font-bold text-gray-800">5. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by applicable law, SaaS Down Radar and its operators, contributors, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, punitive, or exemplary damages arising out of or in connection with your use of or inability to use the Service. This limitation applies regardless of the theory of liability (tort, contract, or otherwise) and even if we have been advised of the possibility of such damages.</p>
+        <p>Without limiting the foregoing, we are specifically not liable for damages resulting from:</p>
         <ul class="list-disc list-inside ml-4 space-y-1">
-          <li>Inaccurate status information</li>
-          <li>Delayed status updates</li>
-          <li>Service downtime or unavailability</li>
-          <li>Decisions made based on information from the Service</li>
+          <li>Inaccurate, delayed, or missing status information for any monitored service</li>
+          <li>Business decisions, engineering decisions, or operational actions taken based on information displayed on the dashboard</li>
+          <li>Failure to timely learn about a service outage because of a delay in our status polling</li>
+          <li>Loss of data, revenue, profits, or business opportunities caused by relying on our Service</li>
+          <li>Any downtime or unavailability of the SaaS Down Radar website itself</li>
         </ul>
 
-        <h2 class="text-xl font-bold text-gray-800">5. Third-Party Services</h2>
-        <p>The Service displays status information about third-party SaaS services. We are not affiliated with, endorsed by, or responsible for any of the monitored services. Always check official status pages for the most accurate information.</p>
-
-        <h2 class="text-xl font-bold text-gray-800">6. Intellectual Property</h2>
-        <p>Service names, logos, and trademarks displayed on SaaS Down Radar belong to their respective owners. Their inclusion on our dashboard does not imply endorsement.</p>
+        <h2 class="text-xl font-bold text-gray-800">6. Third-Party Services and Trademarks</h2>
+        <p>SaaS Down Radar displays status information about independent third-party SaaS services. We are not affiliated with, endorsed by, sponsored by, or in any way officially connected to any of the services we monitor, including but not limited to GitHub, Slack, AWS, Google Cloud, Notion, Vercel, Stripe, OpenAI, or any other monitored platform. Service names, product names, and logos displayed on our dashboard are trademarks or registered trademarks of their respective owners. Their display on SaaS Down Radar does not imply any endorsement, partnership, or affiliation.</p>
 
         <h2 class="text-xl font-bold text-gray-800">7. Advertising</h2>
-        <p>The Service may display advertisements from third-party ad networks. We are not responsible for the content of these advertisements. By using the Service, you acknowledge that ads may be displayed.</p>
+        <p>The Service may display advertisements served by third-party advertising networks, including Google AdSense and Adsterra. We are not responsible for the content, accuracy, or practices of these advertisements. The appearance of an advertisement on SaaS Down Radar does not constitute our endorsement of the advertised product or service. If you encounter an inappropriate or deceptive advertisement, please report it to us at <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a>.</p>
 
         <h2 class="text-xl font-bold text-gray-800">8. Acceptable Use</h2>
-        <p>You agree not to:</p>
+        <p>You agree to use the Service only for lawful purposes and in a manner consistent with these Terms. You specifically agree not to:</p>
         <ul class="list-disc list-inside ml-4 space-y-1">
-          <li>Attempt to scrape, crawl, or automated access the Service beyond normal use</li>
-          <li>Interfere with or disrupt the Service or its infrastructure</li>
-          <li>Use the Service for any unlawful purpose</li>
-          <li>Attempt to circumvent any security measures</li>
+          <li>Engage in automated scraping, crawling, or bulk downloading of data from the Service beyond normal browser-based usage</li>
+          <li>Attempt to interfere with, disrupt, or compromise the integrity or performance of the Service or its underlying infrastructure</li>
+          <li>Use the Service in any manner that could damage, disable, overburden, or impair the Service</li>
+          <li>Attempt to gain unauthorized access to any part of the Service or its related systems</li>
+          <li>Use the Service for any illegal purpose or in violation of any applicable laws or regulations</li>
+          <li>Misrepresent or falsely attribute data from SaaS Down Radar, including presenting our status displays as official vendor communications</li>
         </ul>
 
-        <h2 class="text-xl font-bold text-gray-800">9. Modifications</h2>
-        <p>We reserve the right to modify or discontinue the Service at any time without notice. We may also update these Terms from time to time. Continued use of the Service constitutes acceptance of any changes.</p>
+        <h2 class="text-xl font-bold text-gray-800">9. Intellectual Property</h2>
+        <p>The design, layout, code, and original content of SaaS Down Radar are the intellectual property of its operators. Service names, logos, and trademarks displayed on the dashboard belong to their respective third-party owners. Nothing in these Terms grants you any license to our proprietary content or to the trademarks of monitored third-party services.</p>
 
-        <h2 class="text-xl font-bold text-gray-800">10. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles.</p>
+        <h2 class="text-xl font-bold text-gray-800">10. Modifications to the Service</h2>
+        <p>We reserve the right to modify, suspend, or discontinue the Service or any portion of it at any time without notice. We are not liable to you or any third party for any modification, suspension, or discontinuation of the Service. We may also add or remove monitored services at any time based on API availability, community demand, or operational decisions.</p>
 
-        <h2 class="text-xl font-bold text-gray-800">11. Contact</h2>
-        <p>For questions about these Terms, contact us at: <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a></p>
+        <h2 class="text-xl font-bold text-gray-800">11. Governing Law</h2>
+        <p>These Terms of Service shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the Service shall be subject to the exclusive jurisdiction of courts of competent authority.</p>
+
+        <h2 class="text-xl font-bold text-gray-800">12. Contact</h2>
+        <p>For questions, concerns, or reports related to these Terms of Service, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:taeshinkim11@gmail.com" class="text-blue-500 hover:text-blue-700">taeshinkim11@gmail.com</a></p>
+        <p>We aim to respond to all inquiries within 5 business days.</p>
+
       </div>
     </article>
   </main>
 
   <footer class="bg-white border-t border-gray-100 mt-12">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-xs text-gray-400">
+      <div class="flex justify-center gap-4 mb-3">
+        <a href="./" class="hover:text-gray-600">Home</a>
+        <a href="./about.html" class="hover:text-gray-600">About</a>
+        <a href="./faq.html" class="hover:text-gray-600">FAQ</a>
+        <a href="./privacy.html" class="hover:text-gray-600">Privacy Policy</a>
+        <a href="./terms.html" class="hover:text-gray-600">Terms of Service</a>
+      </div>
       <p>&copy; 2026 SaaS Down Radar. All rights reserved.</p>
     </div>
   </footer>
