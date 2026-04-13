@@ -9,23 +9,23 @@ export default async function handler(req, res) {
     "status.openai.com",
     "www.githubstatus.com",
     "status.slack.com",
-    "status.notion.so",
+    "www.notion-status.com",
     "www.vercel-status.com",
     "www.cloudflarestatus.com",
     "status.stripe.com",
     "discordstatus.com",
-    "status.zoom.us",
+    "www.zoomstatus.com",
     "www.netlifystatus.com",
-    "status.heroku.com",
     "status.npmjs.org",
-    "www.dockerstatus.com",
-    "status.linear.app",
+    "linearstatus.com",
     "status.figma.com",
     "status.twilio.com",
     "status.datadoghq.com",
     "health.aws.amazon.com",
     "status.cloud.google.com",
-    "status.azure.com"
+    "status.azure.com",
+    "jira-software.status.atlassian.com",
+    "www.shopifystatus.com"
   ];
 
   let domain;

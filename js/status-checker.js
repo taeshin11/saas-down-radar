@@ -23,6 +23,11 @@ const StatusChecker = {
       return this.fetchNonAtlassian(service);
     }
 
+    // Special handling for Slack (custom API format)
+    if (service.id === 'slack') {
+      return this.fetchSlackStatus(service);
+    }
+
     try {
       const apiUrl = service.api;
       let url;
@@ -127,6 +132,43 @@ const StatusChecker = {
       lastChecked: Date.now(),
       uptime: this.estimateUptime(status)
     };
+  },
+
+  async fetchSlackStatus(service) {
+    try {
+      const url = `/api/status?url=${encodeURIComponent(service.api)}`;
+      const resp = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      // Slack API returns: {"status":"ok","date_created":"...","date_updated":"..."}
+      const isOk = data.status === 'ok' || data.status === 'active';
+      const result = {
+        id: service.id,
+        name: service.name,
+        status: isOk ? 'operational' : 'degraded',
+        description: isOk ? 'All systems operational' : 'Service may be experiencing issues',
+        components: [],
+        incidents: [],
+        lastChecked: Date.now(),
+        uptime: isOk ? 99.9 : 95.0
+      };
+      this.results[service.id] = result;
+      Cache.set('status_' + service.id, result);
+      return result;
+    } catch (e) {
+      const result = {
+        id: service.id,
+        name: service.name,
+        status: 'unknown',
+        description: 'Unable to fetch status',
+        components: [],
+        incidents: [],
+        lastChecked: Date.now(),
+        uptime: null
+      };
+      this.results[service.id] = result;
+      return result;
+    }
   },
 
   async fetchNonAtlassian(service) {
